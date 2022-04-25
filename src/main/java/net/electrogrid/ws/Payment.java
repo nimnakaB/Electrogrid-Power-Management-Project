@@ -7,20 +7,24 @@ public class Payment {
 	private int totalPayment;
 	private String cardName;
 	private String customerName;
-	
+	private int customerId;
 	
 	
 	public Payment() {
 		super();
 	}
-	public Payment(int paymentId, String payOptions, int totalPayment, String cardName, String customerName) {
+	 
+	public Payment(int paymentId, String payOptions, int totalPayment, String cardName, String customerName,
+			int customerId) {
 		super();
 		this.paymentId = paymentId;
 		this.payOptions = payOptions;
 		this.totalPayment = totalPayment;
 		this.cardName = cardName;
 		this.customerName = customerName;
+		this.customerId = customerId;
 	}
+
 	public int getPaymentId() {
 		return paymentId;
 	}
@@ -51,6 +55,15 @@ public class Payment {
 	public void setCustomerName(String customerName) {
 		this.customerName = customerName;
 	}
+
+	public int getCustomerId() {
+		return customerId;
+	}
+
+	public void setCustomerId(int customerId) {
+		this.customerId = customerId;
+	}
+	
 	
 
 }
